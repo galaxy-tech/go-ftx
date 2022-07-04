@@ -176,6 +176,14 @@ func (p *Client) OrderStatus(req *orders.RequestForOrderStatus) (*orders.Respons
 	return results, nil
 }
 
+func (p *Client) OrderStatusByClientID(req *orders.RequestForOpenOrderByClientID) (*orders.ResponseForOrderStatus, error) {
+	results := new(orders.ResponseForOrderStatus)
+	if err := p.request(req, results); err != nil {
+		return nil, err
+	}
+	return results, nil
+}
+
 // CancelByID do cancel with triggerOrderID > clientID > orderID.
 func (p *Client) CancelByID(req *orders.RequestForCancelByID) (*orders.ResponseForCancelByID, error) {
 	results := new(orders.ResponseForCancelByID)
