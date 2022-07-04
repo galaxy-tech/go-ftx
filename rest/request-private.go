@@ -1,13 +1,13 @@
 package rest
 
 import (
-	"github.com/go-numb/go-ftx/rest/private/account"
-	"github.com/go-numb/go-ftx/rest/private/fills"
-	"github.com/go-numb/go-ftx/rest/private/funding"
-	"github.com/go-numb/go-ftx/rest/private/orders"
-	"github.com/go-numb/go-ftx/rest/private/spotmargin"
-	"github.com/go-numb/go-ftx/rest/private/subaccount"
-	"github.com/go-numb/go-ftx/rest/private/wallet"
+	"github.com/galaxy-tech/go-ftx/rest/private/account"
+	"github.com/galaxy-tech/go-ftx/rest/private/fills"
+	"github.com/galaxy-tech/go-ftx/rest/private/funding"
+	"github.com/galaxy-tech/go-ftx/rest/private/orders"
+	"github.com/galaxy-tech/go-ftx/rest/private/spotmargin"
+	"github.com/galaxy-tech/go-ftx/rest/private/subaccount"
+	"github.com/galaxy-tech/go-ftx/rest/private/wallet"
 )
 
 func (p *Client) Information(req *account.RequestForInformation) (*account.ResponseForInformation, error) {

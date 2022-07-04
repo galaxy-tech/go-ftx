@@ -1,8 +1,8 @@
 package rest
 
 import (
-	"github.com/go-numb/go-ftx/rest/private/leveraged"
-	"github.com/go-numb/go-ftx/rest/private/options"
+	"github.com/galaxy-tech/go-ftx/rest/private/leveraged"
+	"github.com/galaxy-tech/go-ftx/rest/private/options"
 )
 
 /*
